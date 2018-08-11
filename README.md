@@ -25,92 +25,125 @@ A,B,C,D,E are Activities and there launch mode type are as following
 ---------------------
 ### Standard
 Start A
-Task1 — - A
+
+Task1 —  A
 
 Start now B and C so
-Task1 — - ABC
+
+Task1 —  ABC
 
 Start A and B now
-Task1 — - ABCAB
+
+Task1 —  ABCAB
 
 ### SingleTop
 Start A
-Task1 — - A
+
+Task1 —  A
 
 Start now B and C so
-Task1 — - ABC
+
+Task1 —  ABC
 
 Start  C so
-Task1 — - ABC
+
+Task1 —  ABC
 
 Start AB now
-Task1 — - ABCAB
+
+Task1 —  ABCAB
 
 Start C
-Task1 — - ABCABC
+
+Task1 —  ABCABC
 
 ### SingleTask
 Start A
-Task1 —- A
+
+Task1 — A
 
 Start now B and C so
-Task1 — - ABC
+
+Task1 —  ABC
 
 Start  C so
-Task1 — - ABC
+
+Task1 —  ABC
 
 Start AB now
-Task1 — - ABCAB
+
+Task1 —  ABCAB
 
 Start D
-Task1 — - ABCABD
+
+Task1 —  ABCABD
 
 Start D
-Task1 — - ABCABD
+
+Task1 —  ABCABD
 
 Start AB
-Task1 —- ABCABDAB
+
+Task1 — ABCABDAB
 
 Start D
-Task1 —- ABCABD
+
+Task1 — ABCABD
 
 Back press thrice
-Task1 — - ABC
+
+Task1 —  ABC
 
 ### SingleInstance
 Start A
-Task1 — - A
+
+Task1 —  A
 
 Start now B and C so
-Task1 — - ABC
+
+Task1 — ABC
 
 Start  E so
-Task1 — - ABC
-Task2 — - E
+
+Task1 —  ABC
+
+Task2 —  E
 
 Start  AB now
-Task1 — - ABCAB
-Task2 — - E
+
+Task1 — ABCAB
+
+Task2 — E
 
 Start D and start E
-Task1 — - ABCABD
-Task2 —- E
+
+Task1 — ABCABD
+
+Task2 — E
 
 Start E and D
-Task1 — - ABCABD
-Task2 — - E
+
+Task1 —  ABCABD
+
+Task2 —  E
 
 Start AB
-Task1 — - ABCABDAB
-Task2 — - E
+
+Task1 —  ABCABDAB
+
+Task2 —  E
 
 Start D
-- ABCABD
-Task2 —- E
+
+Task1 — ABCABD
+
+Task2 — E
 
 Back press thrice
-Task1 —- ABC
-Task2 —- E
+
+Task1 — ABC
+
+Task2 — E
 
 
 
