@@ -7,35 +7,35 @@ E SingleInstance
 Standard
 Start A
 A
-start now B and C so
+Start now B and C so
 ABC
-start AB now
+Start AB now
 ABCAB
 
 SingleTop
 Start A
 A
-start now B and C so
+Start now B and C so
 ABC
-start  C so
+Start  C so
 ABC
-start AB now
+Start AB now
 ABCAB
-start C
+Start C
 ABCABC
 
 SingleTask
 Start A
 A
-start now B and C so
+Start now B and C so
 ABC
-start  C so
+Start  C so
 ABC
-start AB now
+Start AB now
 ABCAB
-start D
+Start D
 ABCABD
-start D
+Start D
 ABCABD
 Start AB
 ABCABDAB
@@ -47,18 +47,18 @@ ABC
 SingleInstance
 Start A
 A
-start now B and C so
+Start now B and C so
 ABC
-start  E so
+Start  E so
 ABC
 E
-start AB now
+Start AB now
 ABCAB
 E
-start D
+Start D
 ABCABD
 E
-start D
+Start D
 ABCABD
 E
 Start AB
