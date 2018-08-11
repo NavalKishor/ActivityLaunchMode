@@ -1,97 +1,116 @@
 # ActivityLaunchMode
+
+Android Activity Launch Mode
+Launch mode is an instruction for Android OS which specifies how the activity should be launched. It instructs how any new activity should be associated with the current task. Before moving further you first need to understand about very important topics-
+
+1. Tasks
+
+2. Back Stack
+
+Tasks
+A task is a collection of activities that users interact with when performing a certain job. In general an application contains number of activities. Normally when user launch an application a new task will be created and the first activity instance is called root of the task.
+
+When user launches an app from home icon, it navigates through different screens so different activities placed on the top of one another. This collection of activities is known as tasks.
+
+Back Stack
+Activities are arranged with the order in which each activity is opened. This maintained stack called Back Stack. When you start a new activity using startActivity(), it “pushes” a new activity onto your task, and put the previous Activity in the back stack.
+
+Once you press back button then “pops” the top most activity and remove it from the back stack and taking you back to the previous activity.
+
+A,B,C,D,E are Activities and there launch mode type are as following
 * A and B Standard mode
-* C SingleTop
-* D SingleTask
-* E SingleInstance
+* C SingleTop mode
+* D SingleTask mode
+* E SingleInstance mode
 ---------------------
 ### Standard
 Start A
-- A
+Task1 — - A
 
 Start now B and C so
-- ABC
+Task1 — - ABC
 
-Start AB now
-- ABCAB
+Start A and B now
+Task1 — - ABCAB
 
 ### SingleTop
 Start A
-- A
+Task1 — - A
 
 Start now B and C so
-- ABC
+Task1 — - ABC
 
 Start  C so
-- ABC
+Task1 — - ABC
 
 Start AB now
-- ABCAB
+Task1 — - ABCAB
 
 Start C
-- ABCABC
+Task1 — - ABCABC
 
 ### SingleTask
 Start A
-- A
+Task1 —- A
 
 Start now B and C so
-- ABC
+Task1 — - ABC
 
 Start  C so
-- ABC
+Task1 — - ABC
 
 Start AB now
-- ABCAB
+Task1 — - ABCAB
 
 Start D
-- ABCABD
+Task1 — - ABCABD
 
 Start D
-- ABCABD
+Task1 — - ABCABD
 
 Start AB
-- ABCABDAB
+Task1 —- ABCABDAB
 
 Start D
-- ABCABD
+Task1 —- ABCABD
 
 Back press thrice
-- ABC
+Task1 — - ABC
 
 ### SingleInstance
 Start A
-- A
+Task1 — - A
 
 Start now B and C so
-- ABC
+Task1 — - ABC
 
 Start  E so
-- ABC
-- E
+Task1 — - ABC
+Task2 — - E
 
 Start AB now
-- ABCAB
-- E
+Task1 — - ABCAB
+Task2 — - E
 
 Start D
-- ABCABD
-- E
+Task1 — - ABCABD
+Task2 —- E
 
 Start D
-- ABCABD
-- E
+Task1 — - ABCABD
+Task2 — - E
 
 Start AB
-- ABCABDAB
-- E
+Task1 — - ABCABDAB
+Task2 — - E
 
 Start D
 - ABCABD
-- E
+Task2 —- E
 
 Back press thrice
-- ABC
-- E
+Task1 —- ABC
+Task2 —- E
 
 
 
