@@ -1,75 +1,75 @@
 # ActivityLaunchMode
-A and B Standard mode
-C SingleTop
-D SingleTask
-E SingleInstance
+* A and B Standard mode
+* C SingleTop
+* D SingleTask
+* E SingleInstance
 ---------------------
-Standard
+### Standard
 Start A
-A
+- A
 Start now B and C so
-ABC
+- ABC
 Start AB now
-ABCAB
+- ABCAB
 
-SingleTop
+### SingleTop
 Start A
-A
+- A
 Start now B and C so
-ABC
+- ABC
 Start  C so
-ABC
+- ABC
 Start AB now
-ABCAB
+- ABCAB
 Start C
-ABCABC
+- ABCABC
 
-SingleTask
+### SingleTask
 Start A
-A
+- A
 Start now B and C so
-ABC
+- ABC
 Start  C so
-ABC
+- ABC
 Start AB now
-ABCAB
+- ABCAB
 Start D
-ABCABD
+- ABCABD
 Start D
-ABCABD
+- ABCABD
 Start AB
-ABCABDAB
+- ABCABDAB
 Start D
-ABCABD
+- ABCABD
 Back press thrice
-ABC
+- ABC
 
-SingleInstance
+### SingleInstance
 Start A
-A
+- A
 Start now B and C so
-ABC
+- ABC
 Start  E so
-ABC
-E
+- ABC
+- E
 Start AB now
-ABCAB
-E
+- ABCAB
+- E
 Start D
-ABCABD
-E
+- ABCABD
+- E
 Start D
-ABCABD
-E
+- ABCABD
+- E
 Start AB
-ABCABDAB
-E
+- ABCABDAB
+- E
 Start D
-ABCABD
-E
+- ABCABD
+- E
 Back press thrice
-ABC
-E
+- ABC
+- E
 
 
 
