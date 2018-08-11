@@ -88,15 +88,15 @@ Start  E so
 Task1 — - ABC
 Task2 — - E
 
-Start AB now
+Start  AB now
 Task1 — - ABCAB
 Task2 — - E
 
-Start D
+Start D and start E
 Task1 — - ABCABD
 Task2 —- E
 
-Start D
+Start E and D
 Task1 — - ABCABD
 Task2 — - E
 
